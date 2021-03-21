@@ -1,11 +1,30 @@
 :root{
     --colorNAV: #111111;
     --sideWitdh: 200px;
+    --generalTextPadding: 15px;
 }
 
 a{
     text-decoration: none;
-    color: red;
+    color: var(--colorNAV);
+}
+
+header{
+    background-color: skyblue;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
 }
 
 main{
@@ -14,13 +33,34 @@ main{
     flex-direction: column;
 }
 
+footer{
+    text-align: center;
+}
+
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6{
+    /*padding: var(--generalTextPadding);*/
+}
+
 .card img{
     max-width: 400px;
+}
+
+.Chunks div p{
+    padding: var(--generalTextPadding);
 }
 
 .NavChunk{
     width: var(--sideWitdh);
     background-color: lightsalmon;
+}
+
+.NavChunk h2 {
+    padding: var(--generalTextPadding);
+}
+
+#Item1{
+    display: flex;
+    align-items: flex-end;
 }
 
 #Item1, #Item2, #Item3 {
