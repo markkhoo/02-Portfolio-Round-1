@@ -1,5 +1,6 @@
 :root{
-    --colorNAV: #111111:
+    --colorNAV: #111111;
+    --sideWitdh: 200px;
 }
 
 a{
@@ -17,11 +18,19 @@ main{
     max-width: 400px;
 }
 
+.NavChunk{
+    width: var(--sideWitdh);
+    background-color: lightsalmon;
+}
+
 #Item1, #Item2, #Item3 {
     display: flex;
     flex-direction: row;
 }
 
 #profileIMG{
-    max-width: 150px;
+    width: var(--sideWitdh);
+    border: 0px solid rgba(0, 0, 0, 0.0);
+    border-radius: 100%;
+    padding: 20px;
 }
