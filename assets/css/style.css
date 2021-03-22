@@ -4,7 +4,7 @@
     --bodyCOLOR: rgb(25, 30, 34);
     --HeadFootCOLOR: rgb(112, 128, 144, 0.1);
     --generalTextPadding: 15px;
-    --globalFontColor: #ffffff;
+    --globalFontColor: rgb(255, 255, 255);
     --sideWitdh: 175px;
 }
 
@@ -63,6 +63,11 @@ footer{
     background-image: linear-gradient(var(--bodyCOLOR)0%,rgba(0, 0, 0, 0.0)20%,rgba(0, 0, 0, 0.0)80%,var(--bodyCOLOR)100%);
 }
 
+footer p{
+    color: var(--globalFontColor);
+    opacity: 0.5;
+}
+
 .card{
     display: flex;
     border: 10px solid rgba(0, 0, 0, 1.0);
@@ -71,6 +76,14 @@ footer{
     width: auto;
     max-width: calc(33% - 4px);
     min-width: 400px;
+}
+
+.card:nth-child(1){
+    max-width: 100%;
+}
+
+.card:nth-child(1) img{
+    height: 450px;
 }
 
 .card h3{
@@ -143,6 +156,9 @@ footer{
     }
     .card img{
         height: 250px;
+    }
+    .card:nth-child(1) img{
+        height: 350px;
     }
 }
 
