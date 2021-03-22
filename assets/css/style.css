@@ -58,6 +58,16 @@ footer{
 
 .NavChunk h2 {
     padding: var(--generalTextPadding);
+    text-align: right;
+}
+
+#contacts{
+    align-items: center;
+}
+
+#contacts img{
+    height: 30px;
+    margin: 15px;
 }
 
 #Item1{
