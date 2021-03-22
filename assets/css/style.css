@@ -105,6 +105,17 @@ footer p{
     text-shadow: 0 0 6px black, 0 0 4px black, 0 0 2px black;
 }
 
+.card h3:hover{
+    background-color: var(--HeadFootCOLOR);
+    opacity: .9;
+    box-shadow: 0 0 0 4px var(--bodyCOLOR);
+    border-radius: calc(var(--cardRADIUS) - var(--cardBorderTHICKNESS));
+}
+
+.card h3 a{
+    text-decoration: none;
+}
+
 .card a img, .card img{
     border-radius: calc(var(--cardRADIUS) - var(--cardBorderTHICKNESS));
     width: 100%;
@@ -153,7 +164,7 @@ footer p{
     align-items: center;
 }
 
-#contacts img{
+#contacts a img{
     height: 30px;
     margin: 15px;
     filter: invert(80%);
