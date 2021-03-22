@@ -1,19 +1,16 @@
 :root{
-    --colorNAV: #111111;
-    --barLeftCOLOR: lightsalmon;
-    --bodyCOLOR: slategray;
-    --HeadFootCOLOR: skyblue;
+    --colorNAV: #eeeeee;
+    --barLeftCOLOR: inherit;
+    --bodyCOLOR: rgb(25, 30, 34);
+    --HeadFootCOLOR: rgb(112, 128, 144, 0.1);
     --generalTextPadding: 15px;
+    --globalFontColor: #ffffff;
     --sideWitdh: 175px;
 }
 
 *{
     font-family: 'Open Sans', 'Helvetica', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-a{
-    text-decoration: none;
-    color: var(--colorNAV);
+    color: var(--globalFontColor);
 }
 
 body{
@@ -30,6 +27,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0)90%,var(--bodyCOLOR)100%);
 }
 
 header nav ul {
@@ -47,12 +45,22 @@ main{
     flex-direction: column;
 }
 
+nav{
+    font-weight: 900;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--colorNAV);
+}
+
 footer{
     background-color: var(--HeadFootCOLOR);
     text-align: center;
     padding: 10px;
     position: relative;
     z-index: 2;
+    background-image: linear-gradient(var(--bodyCOLOR)0%,rgba(0, 0, 0, 0.0)20%,rgba(0, 0, 0, 0.0)80%,var(--bodyCOLOR)100%);
 }
 
 .card{
@@ -107,6 +115,11 @@ footer{
     text-align: right;
 }
 
+#Item1 div p{
+    text-align: justify;
+    line-height: 1.25;
+}
+
 #contacts{
     align-items: center;
 }
@@ -114,11 +127,7 @@ footer{
 #contacts img{
     height: 30px;
     margin: 15px;
-}
-
-#AboutMe{
-    display: flex;
-    align-items: flex-end;
+    filter: invert(80%);
 }
 
 #profileIMG{
