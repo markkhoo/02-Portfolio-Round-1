@@ -5,6 +5,7 @@
     --barLeftCOLOR: inherit;
     --bodyCOLOR: rgb(25, 30, 34);
     --HeadFootCOLOR: rgb(112, 128, 144, 0.1);
+    --secondaryCOLOR: rgb(40,44,44);
     --generalTextPadding: 15px;
     --globalFontColor: rgb(255, 255, 255);
     --sideWitdh: 175px;
@@ -83,47 +84,35 @@ footer p{
 
 .card{
     display: flex;
-    border: var(--cardBorderTHICKNESS) solid var(--HeadFootCOLOR);
+    border: var(--cardBorderTHICKNESS) solid var(--secondaryCOLOR);
     border-radius: var(--cardRADIUS);
     margin: 4px;
     flex: 1 1 auto;
-    width: auto;
+    height: 300px;
     max-width: calc(33% - 4px);
     min-width: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card:nth-child(1){
     flex: 1 1 100%;
     max-width: 100%;
+    height: 500px;
 }
 
 .card h3{
-    position: absolute;
-    padding: calc((var(--cardRADIUS) - var(--cardBorderTHICKNESS)) / 2 + 4px);
+    padding: calc(var(--cardRADIUS) - var(--cardBorderTHICKNESS)) 0 0 calc(var(--cardRADIUS) - var(--cardBorderTHICKNESS));
     font-size: 175%;
     color: #eeeeee;
     text-shadow: 0 0 6px black, 0 0 4px black, 0 0 2px black;
 }
 
-.card h3:hover{
-    background-color: var(--HeadFootCOLOR);
-    opacity: .9;
-    box-shadow: 0 0 0 4px var(--bodyCOLOR);
-    border-radius: calc(var(--cardRADIUS) - var(--cardBorderTHICKNESS));
-}
-
-.card h3 a{
-    text-decoration: none;
-}
-
-.card a img, .card img{
-    border-radius: calc(var(--cardRADIUS) - var(--cardBorderTHICKNESS));
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.card p{
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 0 0 8px black, 0 0 6px black, 0 0 4px black, 0 0 2px black;
 }
 
 .Chunks{
@@ -175,6 +164,26 @@ footer p{
     border: 0px solid rgba(0, 0, 0, 0.0);
     border-radius: 100%;
     padding: 20px;
+}
+
+#proj1{
+    background-image: url(../images/PlaceHolder/14037884_10206991826454011_903945079_o.jpg);
+}
+
+#proj2{
+    background-image: url(../images/PlaceHolder/GroupMe_20181214_02929[7007].jpeg);
+}
+
+#proj3{
+    background-image: url(../images/PlaceHolder/IMG_0688.JPG);
+}
+
+#proj4{
+    background-image: url(../images/PlaceHolder/IMG_0706.JPG);
+}
+
+#proj5{
+    background-image: url(../images/PlaceHolder/IMG_0710.JPG);
 }
 
 @media screen and (max-width: 1442px){
