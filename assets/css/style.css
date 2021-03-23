@@ -5,7 +5,8 @@
     --barLeftCOLOR: inherit;
     --bodyCOLOR: rgb(25, 30, 34);
     --HeadFootCOLOR: rgb(112, 128, 144, 0.1);
-    --secondaryCOLOR: rgb(40,44,44);
+    --greyCOLOR: rgb(40,44,44);
+    --secondaryCOLOR:rgb(197,105,49);
     --generalTextPadding: 15px;
     --globalFontColor: rgb(255, 255, 255);
     --sideWitdh: 175px;
@@ -14,6 +15,10 @@
 *{
     font-family: 'Open Sans', 'Helvetica', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--globalFontColor);
+}
+
+a{
+    text-decoration: none;
 }
 
 body{
@@ -40,6 +45,11 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
+}
+
+header nav ul li a:hover{
+    color: var(--secondaryCOLOR);
+    transition: all 0.0625s linear;
 }
 
 main{
@@ -84,7 +94,7 @@ footer p{
 
 .card{
     display: flex;
-    border: var(--cardBorderTHICKNESS) solid var(--secondaryCOLOR);
+    border: var(--cardBorderTHICKNESS) solid var(--greyCOLOR);
     border-radius: var(--cardRADIUS);
     margin: 4px;
     flex: 1 1 auto;
@@ -95,20 +105,25 @@ footer p{
     background-size: cover;
 }
 
+.card:hover{
+    transform: scale(0.98, 0.98) ;
+    transition: all 0.25s linear;
+}
+
 .card:nth-child(1){
     flex: 1 1 100%;
     max-width: 100%;
     height: 500px;
 }
 
-.card h3{
+.card div h3{
     padding: calc(var(--cardRADIUS) - var(--cardBorderTHICKNESS)) 0 0 calc(var(--cardRADIUS) - var(--cardBorderTHICKNESS));
     font-size: 175%;
     color: #eeeeee;
     text-shadow: 0 0 6px black, 0 0 4px black, 0 0 2px black;
 }
 
-.card p{
+.card div p{
     font-style: italic;
     font-weight: 700;
     letter-spacing: 3px;
